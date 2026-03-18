@@ -44,7 +44,14 @@ async function createFlow({ orgId, projectId, name }) {
             trigger: true,
           },
           type: 'triggerNode',
-          
+          position: {
+            x: 225,
+            y: 0,
+          },
+          measured: {
+            width: 216,
+            height: 93,
+          },
         },
       ],
       edges: [],

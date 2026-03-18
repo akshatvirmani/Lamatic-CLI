@@ -19,19 +19,28 @@ flow
       console.error(chalk.red('Error: Not authenticated.'));
       process.exit(1);
     }
+
     const orgId = options.orgId || config.orgId;
-    const projectId = options.projectId || config.projectId;
 
     if (!orgId) {
       console.error(chalk.red('Error: Organization ID is required.'));
       process.exit(1);
     }
 
+    let projectId = options.projectId;
     if (!projectId) {
-      console.error(chalk.red('Error: Project ID is required.'));
-      process.exit(1);
+      const res = await inquirer.prompt([
+        {
+          type: 'input',
+          name: 'projectId',
+          message: 'Project ID:',
+          validate: (val) => val.trim() !== '' || 'Project ID is required',
+        },
+      ]);
+      projectId = res.projectId;
     }
 
+   
     let flowName = options.name;
     if (!flowName) {
       const res = await inquirer.prompt([
@@ -55,6 +64,7 @@ flow
       });
 
       console.log(chalk.green('Flow created successfully!\n'));
+
     } catch (err) {
       const msg = err.response?.data?.error || err.response?.data?.message || err.message;
       console.error(chalk.red(`Error creating flow: ${msg}`));
