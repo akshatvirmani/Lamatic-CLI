@@ -191,8 +191,3 @@ lamatic project get --project-id <PROJECT_ID>
 - [npm](https://www.npmjs.com/package/@lamatic/cli)
 - [DevMCP](https://github.com/Lamatic/Dev-MCP-Lamatic) — Manage Lamatic via AI
 - [GraphMCP](https://github.com/Lamatic/GraphMCP-Lamatic) — Execute Lamatic flows via AI
-
-## Links
-- [Lamatic](https://lamatic.ai)
-- [DevMCP](https://github.com/Lamatic/Dev-MCP-Lamatic) — Manage Lamatic via AI
-- [GraphMCP](https://github.com/Lamatic/GraphMCP-Lamatic) — Execute Lamatic flows via AI
