@@ -1,7 +1,7 @@
 {
-  "name": "lamatic-cli",
+  "name": "@lamatic/cli",
   "version": "1.0.0",
-  "description": "Lamatic CLI",
+  "description": "The official CLI for Lamatic AI flows",
   "main": "bin/lamatic.js",
   "bin": {
     "lamatic": "./bin/lamatic.js"
@@ -9,9 +9,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "bin/",
+    "commands/",
+    "utils/",
+    "README.md"
+  ],
+  "keywords": ["lamatic", "ai", "flows", "cli"],
+  "author": "Lamatic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshatvirmani/Lamatic-CLI"
+  },
+  "homepage": "https://github.com/akshatvirmani/Lamatic-CLI#readme",
+  "bugs": {
+    "url": "https://github.com/akshatvirmani/Lamatic-CLI/issues"
+  },
   "type": "commonjs",
   "dependencies": {
     "axios": "^1.13.6",

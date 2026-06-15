@@ -1,7 +1,0 @@
-name: checking
-project_id: 0f04ea46-4bd6-41d4-ac40-f3c10683c459
-slug: Checking358
-org_id: 34105403-a5c1-44f6-bfac-6b0ed8d442ad
-region: us-east-1
-endpoint: https://developerapi120-checking358.lamatic.dev/graphql
-status: deployed
